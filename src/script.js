@@ -12,7 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const convertedValue = currentValue
       .replace("×", "*")
       .replace("÷", "/")
-      .replace("%", "*0.01");
+      .replace("%", "*0.01")
+      .replace("sin", 'Math.sin')
+      .replace("cos", 'Math.cos')
+      .replace("π", 'Math.PI')
+      .replace("ln", 'Math.log')
+      .replace("√", 'Math.sqrt')
+      .replace("xy", 'Math.sqrt');
+      
+      
 
     console.log("convertedValue", convertedValue);
     const result = eval(convertedValue);
@@ -35,8 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
         display.value = currentValue;
       }
 
-      // currentValue += value;
-      // display.value = currentValue;
       console.log("button clicked:", button.innerText);
     });
   }
