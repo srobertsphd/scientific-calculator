@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .replace("ln", 'Math.log')
       .replace("√", 'Math.sqrt')
       .replace("^", '**')
-      .replace("log", 'Math.log10');
+      .replace("log", 'Math.log10')
+      .replace("EXP", 'Math.exp')
+      .replace("e", 'Math.E');
           
     console.log("convertedValue", convertedValue);
     const result = eval(convertedValue);
