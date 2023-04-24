@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(buttons);
 
   let currentValue = "";
+ 
 
   function evaluateResult() {
     console.log("currentValue", currentValue);
@@ -18,10 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .replace("π", 'Math.PI')
       .replace("ln", 'Math.log')
       .replace("√", 'Math.sqrt')
-      .replace("xy", 'Math.sqrt');
-      
-      
-
+      .replace("^", '**')
+      .replace("log", 'Math.log10');
+          
     console.log("convertedValue", convertedValue);
     const result = eval(convertedValue);
     currentValue = result.toString();
@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
         display.value = currentValue;
       } else if (value == "=") {
         evaluateResult();
+      } else if (value == "xy") {
+        let base = display.value;
+        display.value = base + "^";
+        currentValue = display.value;
       } else {
         currentValue += value;
         display.value = currentValue;
