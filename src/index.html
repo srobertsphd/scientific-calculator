@@ -17,6 +17,27 @@
             border-top-right-radius: 50px !important;
             border-bottom-right-radius: 50px !important;
         }
+
+        .btn-secondary {
+             background-color:#D5D8DC !important;
+             color: black;
+        }
+
+        .btn-secondary:focus {
+            color: black;
+        }
+
+        .btn-dark {
+            background-color: #BBDEFB;
+            color: #0000FF;
+        }
+
+.btn-light:focus  {
+  background-color: inherit !important;
+}
+
+
+
     </style>
 </head>
 
@@ -37,17 +58,17 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     )
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     %
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     AC
                                 </button>
                             </div>
@@ -69,7 +90,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     ÷
                                 </button>
                             </div>
@@ -91,7 +112,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     ×
                                 </button>
                             </div>
@@ -113,7 +134,7 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     -
                                 </button>
                             </div>
@@ -135,68 +156,68 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     +
                                 </button>
                             </div>
 
                             <!-- ROW 6 -->
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     sin
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     ln
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     π
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     cos
                                 </button>
                             </div>
 
                             <!-- ROW 7 -->
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     log
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     e
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     tan
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     √
                                 </button>
                             </div>
 
                             <!-- ROW 8 -->
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     Ans
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     EXP
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light w-100 mt-2 border">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
                                     <span></span>x</span><sup>y</sup>
                                 </button>
                             </div>
@@ -205,9 +226,32 @@
                                     =
                                 </button>
                             </div>
-                            <div class="col-3 btn-group mt-3" role="group">
-                                <button type="button" class="btn btn-primary rounded-start">123</button>
-                                <button type="button" class="btn btn-primary rounded-end">Fx</button>
+
+
+                            <div class="col-6">
+                                <div class="btn-group w-100 mt-2" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="deg-rad" id="deg-btn" value="deg" checked>
+                                    <label class="btn btn-light btn-toggle w-100" for="deg-btn"><span class="text-secondary">Deg</span></label>
+                                    
+                                    <input type="radio" class="btn-check" name="deg-rad" id="rad-btn" value="rad">
+                                    <label class="btn btn-light btn-toggle w-100" for="rad-btn"><span class="text-secondary">Rad</span></label>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
+                                    x!
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">
+                                    Inv
+                                </button>
+                            </div>
+
+                            <!-- ROW 10 -- 123|fx buttons -->
+                            <div class="col-5 btn-group mt-3" role="group">
+                                <button type="button" class="btn btn-dark rounded-start border border-primary">123</button>
+                                <button type="button" class="btn btn-light rounded-end border border-primary">Fx</button>
                             </div>
                         </div>
                     </div>
